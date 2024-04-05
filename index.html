@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tr-Juego del Ahorcado</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>"Juego del ahorcado"</h1>
+    <h2>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </h2>
+
+    <div id="output"></div>
+    <input type="text" id="input" oninput="guessLetter()" 
+    autofocus autocapitalize="off" pattern="[A-Za-z]{1}">
+
+    <div id="guessed"></div>
+    <aside data-modal="newGame">
+        <span data-overlay></span>
+    </aside>
+    <aside data-modal="youWin">
+        <article>
+            <section>
+                <input type="button" id="signup" data-button value="Juegar de Nuevo"
+                 onclick="resetGame()">
+            </section>
+        </article>
+        <span data-overlay></span>
+    </aside>
+    <aside data-modal="youLose">
+        <article>
+            <section>
+                
+            </section>
+        </article>
+        <span data-overlay=""></span>
+    </aside>
+<script src="script.js"></script>
+</body>
+</html>
